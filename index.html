@@ -5,22 +5,249 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="stylecalendar.css">
+    <link rel="stylesheet" href="polices/stylesheet.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="stylehome.css">
+    <link rel="stylesheet" href="style(navbutton).css">
+    <link rel="stylesheet" href="stylemap.css">
+    <link rel="stylesheet" href="style-footer.css">
+    
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 </head>
 <body>
-    <header>
-        <img class="logo" src="images/Logo_blanc.png" alt="">
-        <h3 class="accueil">ACCUEIL</h3>
-        <div class="vl"></div>
-        <h3 class="collection">COLLECTION</h3>
-        <div class="vl"></div>
-        <h3 class="amav">AMAV</h3>
-        <div class="vl"></div>
-        <h3 class="apropos">A PROPOS</h3>
-        <div class="v2"></div>
-        <h3 class="fr">Fr</h3>
-        <div class="v3"></div>
-        <h3 class="en">En</h3>
-    </header>
+    <!-- Système de la SideBar -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h2 class="texte" >Choisissez vos dates</h2>
+        <hr class="lignenav"> 
+        <img class="progression" src="assets/progression1.png" alt="">
+        <div class="calendrier" id="datepicker"></div>
+        <img onclick="openNav2()" class="suivant" src="assets/suivant.png" alt="">
+    </div>
+
+    <div id="mySidenav2" class="sidenav2">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img onclick="retour()" class="retour" src="assets/retour.png" alt="">
+        <h2 class="texte" >Nos Tarifs</h2>
+        <hr class="lignenav"> 
+        <img class="progression" src="assets/progression2.png" alt="">
+        <div class="indiv-group">
+            <p onclick="closeTarifGroup()" id="indivcolor" class="indiv">Individuel</p>
+            <p onclick="openTarifGroup()" id="groupcolor" class="gr">Groupes</p>
+        </div>
+        <div class="tarif">
+            <section class="prix">
+                <p class="plein" >Plein tarif</p>
+                <p>7€</p>
+                <input type="number" min="0" max="100" id="number">
+            </section>
+            <hr class="lignetarif">
+            <section class="prix">
+                <p class="reduit">Tarif réduit*</p>
+                <p>6€</p>
+                <input type="number" min="0" max="100" id="number">
+            </section>
+            <hr class="lignetarif">
+            <section class="prix">
+                <p class="jeune" >Jeune 7-17 ans</p>
+                <p>5€</p>
+                <input type="number" min="0" max="100" id="number">
+            </section>
+            <hr class="lignetarif">
+            <p class="star">*étudiants, demandeurs d'emploi, personnes handicapées, et enseignants</p>
+        </div>
+        <img onclick="openNav3()" class="suivant" src="assets/suivant.png" alt="">
+    </div>
+
+    <div id="tarif-group" class="group">
+        <div class="tarif">
+            <section class="prix">
+                <p class="adultes" >Adultes</p>
+                <p>7€</p>
+                <input type="number" placeholder="x10" min="10" max="100" id="number">
+            </section>
+            <hr class="lignetarif">
+            <section class="prix">
+                <p class="scolaire">Scolaire</p>
+                <p>6€</p>
+                <input type="number" placeholder="x10" min="10" max="100" id="number">
+            </section>
+            <hr class="lignetarif">
+        </div>
+    </div>
+
+    <div id="mySidenav3" class="sidenav2">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img onclick="retour2()" class="retour" src="assets/retour.png" alt="">
+        <h2 class="texte" >Vos Informations</h2>
+        <hr class="lignenav"> 
+        <img class="progression" src="assets/progression3.png" alt="">
+        <form class="form">
+            <input type="text" id="nom" placeholder="Nom">
+            <br>
+            <input type="text" id="prenom" placeholder="Prénom">
+            <br>
+            <input type="text" id="mail" placeholder="E-mail">
+            <br>
+            <input type="text" id="num" placeholder="Numéro Téléphone" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+            <p class="format">Format: 05 12 34 56 78</p>
+        </form>
+        <img class="suivant" src="assets/payer.png" alt="">
+    </div>
+    <!-- Le Coeur du Site -->
+    <div class="all">
+        <!-- Header -->
+        <header>
+            <img class="logo" src="images/Logo_blanc.png" alt="">
+            <nav>
+                <a class="button" href="">ACCUEIL</a>
+                <a class="button" href="">COLLECTION</a>
+                <a class="button" href="">AMAV</a>
+                <a class="button" href="">A PROPOS</a>
+                <a class="Fr" href="">Fr</a>
+                <a class="En"href="">En</a>
+            </nav>
+        </header>
+        <video autoplay loop>
+            <source type="video/mp4" src="images/Séquence 01.mp4"></source>
+        </video>
+        <!-- Contenu + Boutons -->
+        <div class="flux" >
+            <section class="middle" >
+                <h1 class="head">Venez découvrir l’histoire <br> de l’automobile</h1>
+            </section>
+            <section class="ticket" >
+                <img onclick="openNav()" src="assets/Follow bouton.png" alt="">
+            </section>
+            <section class="buyticket" >
+                <img onclick="openNav()" src="assets/Reserver.png" alt="">
+            </section>
+            <section class="swipe" >
+                <img src="assets/swipe.png" alt="">
+            </section>
+            <section class="text">
+                <h1 class="title">Le Musée</h1>
+                <hr class="lignetext"> 
+                <section class="locaux">
+                    <h2>Découvrez nos locaux</h2>
+                    <p>Le Musée de l’Automobile de Valençay vous présente près d’un siècle de cette incroyable invention qui a révolutionné le monde, il y a 130 ans maintenant, sur 1600 m2  d’exposition, regroupant une soixantaine de voitures, plusieurs camions de pompiers et un espace vélos et motos.</p>
+                    <button onclick="window.location.href = 'https://fr.w3docs.com/';">❙    DECOUVRIR LE MUSEE   ❙ </button>
+                </section>
+        
+                <section class="Un-siecle-d-automobile">
+                    <h2>Découvrez plus d'un siècle d'Automobile !</h2>
+                    <p>Issu de la collection des frères GUIGNARD, le Musée de l’Automobile de Valençay présente l’évolution de l’industrie automobile française sur plus d’un siècle. Garagiste de père en fils depuis 1906, les membres de la famille GUIGNARD ont conservé au fil des années, les voitures qu’ils possédaient et ont même étoffé leur collection. </p>
+                    <button onclick="window.location.href = 'https://fr.w3docs.com/';">❙    DECOUVRIR NOTRE COLLECTION  ❙ </button>
+                </section>
+        
+                <section class="facon">
+                    <h2>Découvrez de la façon dont vous voulez !</h2>
+                    <p>Visiter notre musée à votre manière grâce à nos différentes offres. Nous proposons des visites en Francais et en Anglais. Nous nous adaptons à vos besoins.</p>
+                    <button onclick="window.location.href = 'https://fr.w3docs.com/';">❙    DECOUVRIR NOS OFFRES   ❙ </button>
+                </section>
+            </section>
+            
+            <div class="trouver">
+                <h1><u>Où nous trouver ?</u></h1>
+                <h2>Se rendre au musée :</h2>
+                <p>Prendre la sortie A85 Chémery</p>
+                <p>Prendre la sortie A71 Vatan </p>
+                <p>Parking d’une capacité de 50 places </p>
+                <p>en accès libre et gratuit, pour tous,</p>
+                <p>durant les horaires d’ouverture</p>
+                <br>
+                <p>12 Av. de la Résistance, 36600 Valença</p>
+                <img src="images/Capture d’écran 2022-10-12 à 17.10 1.jpg" alt="">
+            </div>
+
+            <footer>
+                <section class="footer">
+                    <div class="nous-contacter">
+                        <p class="footer-title">NOUS CONTACTER</p>
+                        <p>E-mail: musee-auto-valencay@orange.fr <br>
+                        Téléphone: 02 54 00 07 74</p>
+                    </div>
+        
+                    <div class="nous-suivre">
+                        <p class="footer-title">NOUS SUIVRE</p>
+                        <a href=""><img src="images/Group.png" alt="twitter" class="icon"></a>
+                        <a href=""><img src="images/la_facebook-square.png" alt="facebook" class="icon"></a>
+                        <a href=""><img src="images/ri_instagram-line.png" alt="ri_instagram-line" class="icon"></a>
+                    </div>
+        
+                    <div class="laissez-votre-avis">
+                        <p class="footer-title">LAISSEZ VOTRE AVIS</p>
+                        <a href="">Sur Google</a><br>
+                        <a href="">Sur Tripadvisor</a>
+                    </div>
+                </section>
+        
+                <section class="footer-bas">
+                    <div class="F1">
+                        <p>2022 © Musée de l’Automobile de Valencay - Tous droits réservés</p>
+                    </div>
+                    <div class="F2">
+                        <a href="">Mentions légales</a>
+                    </div>
+                    <div class="F3">
+                        <a href="">Politique de confidentialitée</a> 
+                    </div>
+                    <div class="F4">
+                        <p>Réalisé par <a href="">FrenchBears</a></p>
+                    </div>
+                </section>
+            </footer>
+
+        </div>
+    </div>
+    <!-- Scripts pour le fonctionnement de la SideBar -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "50%";
+        }
+        
+        function openNav2() {
+            document.getElementById("mySidenav2").style.width = "50%";
+        }
+
+        function openNav3() {
+            document.getElementById("mySidenav3").style.width = "50%";
+        }
+
+        function openTarifGroup() {
+            document.getElementById("tarif-group").style.width = "50%";
+            document.getElementById("groupcolor").style.color = "#F1A208";
+            document.getElementById("indivcolor").style.color = "#000000";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("mySidenav2").style.width = "0";
+            document.getElementById("mySidenav3").style.width = "0";
+            document.getElementById("tarif-group").style.width = "0%";
+        }
+
+        function closeTarifGroup() {
+            document.getElementById("tarif-group").style.width = "0%";
+            document.getElementById("groupcolor").style.color = "#000000";
+            document.getElementById("indivcolor").style.color = "#F1A208";
+        }
+
+        function retour() {
+            document.getElementById("mySidenav2").style.width = "0";
+            document.getElementById("tarif-group").style.width = "0%";
+        }
+
+        function retour2() {
+            document.getElementById("mySidenav3").style.width = "0";
+        }
+
+        $( "#datepicker" ).datepicker();
+
+    </script>
 </body>
 </html>
