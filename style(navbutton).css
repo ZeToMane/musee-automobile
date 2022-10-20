@@ -1,0 +1,191 @@
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #D9D9D9;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav2 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #D9D9D9;
+    overflow-x: hidden;
+}
+
+.group {
+    height: 43%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 345px;
+    right: 0;
+    background-color: #D9D9D9;
+    overflow-x: hidden;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 76px;
+    margin-left: 50px;
+    color: black;
+}
+.closebtn:hover{
+    color: #F1A208;
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+.ticket{
+    cursor: pointer;
+}
+.suivant{
+    margin-top: 6%;
+    margin-left: 36.5%;
+    cursor: pointer;
+    /* transition: 0.1s; */
+}
+
+.retour{
+    margin-top: 0%;
+    margin-left: 2%;
+    width: 26%;
+    cursor: pointer;
+    /* transition: 0.1s; */
+}
+
+.calendrier{
+    margin-top: 5%;
+    margin-left: 32.5%;
+    font-family: 'monopolixbold';
+    /* transition: 0.1s; */
+}
+.texte{
+    text-align: center;
+    margin-top: 5%;
+    color: black;
+    font-family: 'monopolixbold';
+    font-size: 64px;
+    /* transition: 0.1s; */
+}
+.lignenav {
+    position: relative;
+    border: none;
+    width: 36.5%;
+    height: 3px;
+    background: black;
+    margin-bottom: 50px;
+    /* transition: 0.1s; */
+}
+.progression{
+    margin-left: 35%;
+}
+.indiv-group{
+    display: flex;
+    border: solid 1px orange;
+    margin-top: 5%;
+    margin-left: 11%;
+    font-size: 48px;
+    font-family: 'monopolixbold';
+    /* transition: 0.1s; */
+    margin-bottom: 20px;
+}
+.indiv{
+    margin-right: 30%;
+    color: #F1A208;
+}
+.indiv:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+.gr:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+.tarif{
+    border: solid 1px red;
+    margin-left: 11%;
+    font-size: 48px;
+    font-family: 'monopolixmedium';
+    /* transition: 0.1s; */
+}
+.prix{
+    display: flex;
+}
+.star{
+    font-size: 20px;
+}
+.plein{
+    margin-right: 20%;
+}
+.reduit{
+    margin-right: 13%;
+}
+.jeune{
+    margin-right: 7%;
+}
+.adultes{
+    margin-right: 25.5%;
+}
+.scolaire{
+    margin-right: 23.5%;
+}
+.lignetarif {
+    position: relative;
+    border: none;
+    width: 80%;
+    height: 1px;
+    background: black;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    /* transition: 0.1s; */
+}
+.form{
+    margin-top: 5%;
+    margin-left: 33%;
+    /* transition: 0.1s; */
+}
+.nom{
+    height: 50%;
+}
+
+.ui-widget-content{
+    background: #D9D9D9;
+}
+.ui-state-default{
+    background: white;
+    color: black;
+}
+#number{
+    width: 3em;
+    height: 10%;
+    margin-left: 25%;
+    margin-top: 1%;
+    margin-bottom: 0;
+}
+
+input[type="text"] {
+    height: 2em;
+    font-size:25px;
+    margin-bottom: 10px;
+}
+input[type="tel"] {
+    height: 2em;
+    font-size:25px;
+    margin-bottom: 10px;
+}
+.format{
+    font-family: 'monopolix_medium-webfont';
+}

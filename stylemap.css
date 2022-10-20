@@ -1,0 +1,50 @@
+.trouver{
+    color: white;
+    margin-bottom: 150px;
+}
+
+.trouver h1{
+    font-family: "monopolixbold";
+}
+.trouver h2{
+    font-family: "monopolixbold";
+}
+.trouver p{
+    font-family: "Nunito";
+    text-align: justify;
+    margin-left: 20%;
+    line-height: 10px;
+    
+
+}
+.trouver h1{
+    width: 65;
+    text-align: center;
+    margin-bottom: 12%;
+    padding-top: 10%;
+
+
+}
+.trouver p{
+    font-family: "Nunito";
+    text-align: justify;
+    margin-left: 20%;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.trouver h2{
+    font-size: 32px;
+    margin-left: 14%;
+    margin-bottom: 4%;
+}
+.trouver img{
+    margin-right: 50%;
+    padding-left: 49%;
+    margin-top: -23%;
+    size-adjust: 30% ;
+
+}
+.trouver h1{
+    font-size: 58px ;
+}

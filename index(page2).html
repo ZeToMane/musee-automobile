@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="stylecalendar.css">
+    <link rel="stylesheet" href="polices/stylesheet.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="stylehome.css">
+    <link rel="stylesheet" href="style(page2).css">
+    <link rel="stylesheet" href="style-footer.css">
+    <link rel="stylesheet" href="style(navbutton).css">
+
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+    <!-- Système de la SideBar -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h2 class="texte" >Choisissez vos dates</h2>
+        <hr class="lignenav"> 
+        <img class="progression" src="assets/progression1.png" alt="">
+        <div class="calendrier" id="datepicker"></div>
+        <img onclick="openNav2()" class="suivant" src="assets/suivant.png" alt="">
+    </div>
+
+    <div id="mySidenav2" class="sidenav2">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img onclick="retour()" class="retour" src="assets/retour.png" alt="">
+        <h2 class="texte" >Nos Tarifs</h2>
+        <hr class="lignenav"> 
+        <img class="progression" src="assets/progression2.png" alt="">
+        <div class="indiv-group">
+            <p onclick="closeTarifGroup()" id="indivcolor" class="indiv">Individuel</p>
+            <p onclick="openTarifGroup()" id="groupcolor" class="gr">Groupes</p>
+        </div>
+        <div class="tarif">
+            <section class="prix">
+                <p class="plein" >Plein tarif</p>
+                <p>7€</p>
+                <input type="number" min="0" max="100" id="number">
+            </section>
+            <hr class="lignetarif">
+            <section class="prix">
+                <p class="reduit">Tarif réduit*</p>
+                <p>6€</p>
+                <input type="number" min="0" max="100" id="number">
+            </section>
+            <hr class="lignetarif">
+            <section class="prix">
+                <p class="jeune" >Jeune 7-17 ans</p>
+                <p>5€</p>
+                <input type="number" min="0" max="100" id="number">
+            </section>
+            <hr class="lignetarif">
+            <p class="star">*étudiants, demandeurs d'emploi, personnes handicapées, et enseignants</p>
+        </div>
+        <img onclick="openNav3()" class="suivant" src="assets/suivant.png" alt="">
+    </div>
+
+    <div id="tarif-group" class="group">
+        <div class="tarif">
+            <section class="prix">
+                <p class="adultes" >Adultes</p>
+                <p>7€</p>
+                <input type="number" placeholder="x10" min="10" max="100" id="number">
+            </section>
+            <hr class="lignetarif">
+            <section class="prix">
+                <p class="scolaire">Scolaire</p>
+                <p>6€</p>
+                <input type="number" placeholder="x10" min="10" max="100" id="number">
+            </section>
+            <hr class="lignetarif">
+        </div>
+    </div>
+
+    <div id="mySidenav3" class="sidenav2">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img onclick="retour2()" class="retour" src="assets/retour.png" alt="">
+        <h2 class="texte" >Vos Informations</h2>
+        <hr class="lignenav"> 
+        <img class="progression" src="assets/progression3.png" alt="">
+        <img class="form" src="assets/formulaire.png" alt="">
+        <img class="suivant" src="assets/payer.png" alt="">
+    </div>
+    <!-- Le Coeur du Site -->
+    <div class="all">
+        <!-- Header -->
+        <header>
+            <img class="logo" src="images/Logo_blanc.png" alt="">
+            <nav>
+                <a class="button" href="">ACCUEIL</a>
+                <a class="button" href="">COLLECTION</a>
+                <a class="button" href="">AMAV</a>
+                <a class="button" href="">A PROPOS</a>
+                <a class="Fr" href="">Fr</a>
+                <a class="En"href="">En</a>
+            </nav>
+        </header>
+        <!-- Contenu + Boutons -->
+        <div class="flux" >
+            <section class="middle" >
+                <h1 class="head">Venez découvrir l’histoire <br> de l’automobile</h1>
+            </section>
+            <section class="ticket" >
+                <img onclick="openNav()" src="assets/Follow bouton.png" alt="">
+            </section>
+            <section class="buyticket" >
+                <img onclick="openNav()" src="assets/Reserver.png" alt="">
+            </section>
+            <section class="swipe" >
+                <img src="assets/swipe.png" alt="">
+            </section>
+            <!-- Un peu d'Histoire -->
+            <div class="style_background">
+                <h1 class="un_peu_histoire">Un peu d'histoire</h1>
+                <hr class="barre" align="center" width="15%">
+                <div class="texte_uu texte-commun">
+                    <p>Issu de la collection des frères GUIGNARD, le Musée de l'Automobile de Valençay présente l'évolution de
+                        l'industrie automobile
+                        française sur près d'un siècle.</p>
+                    <p>Avant la première Guerre Mondiale, Monsieur Guignard, père, pressentit l'importance qu'allaient prendre
+                        les
+                        véhicules "sans
+                        chevaux" et les étudia pour apprendre à les réparer. Le garage GUIGNARD venait de naître en 1910. Au fil
+                        des
+                        ans, les membres de
+                        la famille GUIGNARD ont conservé les voitures qu'ils possédaient et ont même étoffé leur collection.</p>
+                    <p>En 1949, Camille et André GUIGNARD prirent la suite de leur père. Ils créèrent un garage avec
+                        station-service
+                        sur les bords de la
+                        Nationale 20 qui traversait alors Vatan. </p>
+                    <p>La collection grandissant à mesure des acquisitions et des dons de voitures, en 1981, la famille GUIGNARD
+                        vint exposer ses
+                        véhicules dans l'ancien manège à chevaux du Château de Valençay avant d'emménager en 2001 à l'endroit
+                        qui
+                        est le sien
+                        aujourd'hui. Le Musée est actuellement géré par la Communauté de Communes Ecueillé Valençay.</p>
+                </div>
+
+                <!-- Un voyage dans le passé automobile -->
+                <div class="back-voyage">
+                    <h2 class="voyage_passe">Un voyage dans le passé automobile</h2>
+                    <div class="block_photo">
+                        <div class="texte_aa texte-commun">
+                            <p>Le parcours a été conçu de manière à proposer les archives d'un côté et les voitures de l'autre.
+                                Ainsi, vous pourrez admirer les véhicules de la collection en examinant leurs spécificités grâce aux
+                                fiches techniques installées devant chaque voiture. Puis, vous plongez dans la lecture d'articles de
+                                journaux du début du siècle dernier et contemplez les photos de rallyes historiques (Croisière
+                                rouge, Paris-Barcelone, Monte Carlo...).</p>
+                            <p>La scénographie du Musée, toute en rondeur, offre une sensation de convivialité propice à l'immersion
+                                du visiteur dans ses souvenirs.</p>
+                            <p>L'allée des "Sixties" vous permettra de regarder ces entités sous toutes leurs coutures, vous vous
+                                émerveillerez devant les vitrines pleines d'accessoires et pièces détachées qui ont été pieusement
+                                conservés par les Messieurs Guignard, garagistes à Vatan et propriétaires de la collection qui vous
+                                est présentée aujourd'hui à Valençay.</p>
+                        </div>
+                        <img class="image_arnaud" src="images/arnaud-mariat-zIy-0Q6cnr0-unsplash-removebg.png" alt="image_oiture">
+                    </div>
+                </div>
+
+                <!-- Les ancêtres -->
+                <div class="back-ancetre">
+                    <h2 class="les_ancetre"> Les ancêtres </h2>
+                    <div class="block_photo2">
+                        <div class="texte_ff texte-commun">
+                            <p>Le Musée de l'Automobile de Valençay vous présente un siècle de cette incroyable invention qui a
+                                révolutionné le monde.</p>
+                            <p>Ce sont les dignes représentantes de la fin du XIXe siècles qui vous accueillent tous cuivres
+                                dehors...</p>
+                            <p>Des marques aujourd'hui disparues, mais à l'époque très renommées, témoigneront du formidable essor
+                                qu'a connu l'industrie automobile en France et des progrès effectués avant la première guerre
+                                mondiale.</p>
+                        </div>
+                        <img class="image_philip" src="images/philip-schroeder-BNgiIxXXo-A-unsplash-removebg.png"
+                            alt="image_voiture_philip">
+                    </div>
+                </div>
+
+                <!-- Les populaires des années 50 -->
+                <div class="back-populaire">
+                    <h2 class="populaire"> Les populaires des années 50 </h2>
+                    <div class="block_photo3">
+                        <div class="texte_bb texte-commun">
+                            <p>
+                                Vous pourrez aussi vous ressourcer auprès de voitures plus contemporaines qui ont marqué ce XXe
+                                siècle.</p>
+                            <p>En effet, qui a oublié la 4 CV de Renault, dite la "Puce", ou l'extraordinaire Traction des F.F.I. ?
+                            </p>
+                            <p>Nombreux d'entre vous ont conduit la mythique 2 CV de Citroën, dont la conception remonte tout juste
+                                avant le second conflit mondial !</p>
+                        </div>
+                        <img class="image_frederik" src="images/fredrik-posse-dv6fKajHwjs-unsplash-removebg.png"
+                            alt="image_voiture_fredrik">
+                    </div>
+                </div>
+
+                <!-- Des véhicules d'exception -->
+                <div class="back-exeception">
+                    <h2 class="execption">Des véhicules d'exception</h2>
+                    <div class="block_photo4">
+                        <div class="texte_cc texte-commun">
+                            <p>Le Musée abrite quelques modèles rares qui méritent toute votre attention. Leur histoire atypique
+                                fascinera petits et grands.</p>
+                            <p>A l'image de cette Delaunay-Belleville HH6 de 1908 qui participa à la célèbre bataille de la Marne en
+                                qualité de voiture d'officier. Ce coupé de ville fut réquisitionné comme 1500 autres taxis parisiens
+                                (principalement des Renault pour le transport des troupes) sur l'idée de Galliéni afin de stopper
+                                l'invasion allemande qui se rapprochait dangereusement de la capitale...</p>
+                        </div>
+                        <img class="bonhams"
+                            src="images/Bonhams_-_The_Paris_Sale_2012_-_Delaunay-Belleville_HB4_Tourer_-_1911_-_007.png"
+                            alt="image_voiture_bonhams">
+                    </div>
+                </div>
+
+
+                <h1 class="decouvrir">Venez découvrir l’histoire de <br> l’automobile</h1>
+                <section class="buy2ticket" >
+                    <img onclick="openNav()" src="assets/Reserver.png" alt="">
+                </section>
+
+                <footer>
+                    <section class="footer">
+                        <div class="nous-contacter">
+                            <p class="footer-title">NOUS CONTACTER</p>
+                            <p>E-mail: musee-auto-valencay@orange.fr <br>
+                            Téléphone: 02 54 00 07 74</p>
+                        </div>
+            
+                        <div class="nous-suivre">
+                            <p class="footer-title">NOUS SUIVRE</p>
+                            <a href=""><img src="images/Group.png" alt="twitter" class="icon"></a>
+                            <a href=""><img src="images/la_facebook-square.png" alt="facebook" class="icon"></a>
+                            <a href=""><img src="images/ri_instagram-line.png" alt="ri_instagram-line" class="icon"></a>
+                        </div>
+            
+                        <div class="laissez-votre-avis">
+                            <p class="footer-title">LAISSEZ VOTRE AVIS</p>
+                            <a href="">Sur Google</a><br>
+                            <a href="">Sur Tripadvisor</a>
+                        </div>
+                    </section>
+            
+                    <section class="footer-bas">
+                        <div class="F1">
+                            <p>2022 © Musée de l’Automobile de Valencay - Tous droits réservés</p>
+                        </div>
+                        <div class="F2">
+                            <a href="">Mentions légales</a>
+                        </div>
+                        <div class="F3">
+                            <a href="">Politique de confidentialitée</a> 
+                        </div>
+                        <div class="F4">
+                            <p>Réalisé par <a href="">FrenchBears</a></p>
+                        </div>
+                    </section>
+                </footer>
+
+            </div>
+        </div>
+    </div>
+    <!-- Scripts pour le fonctionnement de la SideBar -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "50%";
+        }
+        
+        function openNav2() {
+            document.getElementById("mySidenav2").style.width = "50%";
+        }
+
+        function openNav3() {
+            document.getElementById("mySidenav3").style.width = "50%";
+        }
+
+        function openTarifGroup() {
+            document.getElementById("tarif-group").style.width = "50%";
+            document.getElementById("groupcolor").style.color = "#F1A208";
+            document.getElementById("indivcolor").style.color = "#000000";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("mySidenav2").style.width = "0";
+            document.getElementById("mySidenav3").style.width = "0";
+            document.getElementById("tarif-group").style.width = "0%";
+        }
+
+        function closeTarifGroup() {
+            document.getElementById("tarif-group").style.width = "0%";
+            document.getElementById("groupcolor").style.color = "#000000";
+            document.getElementById("indivcolor").style.color = "#F1A208";
+        }
+
+        function retour() {
+            document.getElementById("mySidenav2").style.width = "0";
+            document.getElementById("tarif-group").style.width = "0%";
+        }
+
+        function retour2() {
+            document.getElementById("mySidenav3").style.width = "0";
+        }
+
+        $( "#datepicker" ).datepicker();
+
+    </script>
+</body>
+
+</html>

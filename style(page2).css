@@ -1,0 +1,217 @@
+/* body {
+    margin: 0%;
+    margin-left: 3%;
+    margin-right: 3%;
+    color: white;
+    background-color: black;
+} */
+
+.style_back_ground {
+    margin: 0%;
+    margin-left: 3%;
+    margin-right: 3%;
+    color: white;
+    background-color: black;
+    font-family: "Monopolix Rounded";
+}
+
+.barre {
+    color: white;
+    height: 2px;
+    background-color: white;
+    margin-top: 0%;
+    margin-bottom: 50px;
+}
+
+h1.un_peu_histoire {
+    letter-spacing: 7px;
+    font-family: "monopolixbold";
+    font-size: 58px;
+    text-align: center;
+    margin-top: 80px;
+    font-weight: bold;
+    color: white;
+}
+
+h1 {
+    font-family: "Monopolix Rounded";
+    font-weight: bold;
+}
+
+h2 {
+    font-family: "Monopolix Rounder";
+    font-weight: bold;
+}
+
+.voyage_passe {
+    font-family: "Monopolix";
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.block_photo {
+    display: flex;
+    margin-left: 4%;
+}
+
+.les_ancetre {
+    font-family: "Monopolix";
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.block_photo2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.block_photo3 {
+    display: flex;
+    margin-left: 4%;
+}
+
+.block_photo4 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.image_arnaud {
+    margin-top: 150px;
+    width: 50%;
+    height: 100%;
+}
+
+.image_philip {
+    width: 50%;
+
+}
+
+.image_frederik {
+    width: 50%;
+}
+
+div.texte_aa {
+    font-family: "Nunito";
+    font-size: 18px;
+    margin-left: 5%;
+    border: solid 2px white;
+    width: 70%;
+}
+
+.texte-commun p {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    letter-spacing: 4px;
+}
+
+.texte-commun {
+    line-height: 30px;
+    color: white;
+}
+
+div.texte_bb {
+    font-family: "Nunito";
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border: solid 2px white;
+    width: 70%;
+}
+
+div.texte_cc {
+    font-family: "Nunito";
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border: solid 2px white;
+    width: 70%;
+}
+
+div.texte_ff {
+    font-family: "Nunito";
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 30px;
+    border: solid 2px white;
+    width: 70%;
+}
+
+div.texte_uu {
+    font-family: "Nunito";
+    margin-top: 50px;
+    margin-left: 2%;
+    font-size: 18px;
+    border: solid 2px white;
+}
+
+img.bonhams {
+    width: 50%;
+}
+
+.execption {
+    font-family: "Monopolix";
+    font-size: 36px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 30px;
+    color: white;
+}
+
+h2.populaire {
+    font-family: "Monopolix";
+    font-size: 36px;
+    color: white;
+}
+
+h1.decouvrir {
+    font-size: 96px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: "Monopolix";
+    text-align: center;
+    color: white;
+}
+.back-ancetre{
+    border: solid 2px violet;
+    background-image: url(images/philip-back.png);
+    background-size: 100%;
+    margin-bottom: 150px;
+}
+.back-populaire{
+    border: solid 2px violet;
+    background-image: url(images/fredrik-back.png);
+    margin-bottom: 150px;
+}
+.back-exeception{
+    border: solid 2px violet;
+    background-image: url(images/bonhams-back.png);
+    margin-bottom: 100px;
+}
+.back-voyage{
+    border: solid 2px violet;
+    background-image: url(images/arnaud-back.png);
+    background-size: 100%;
+    margin-bottom: 150px;
+    margin-top: 200px;
+}
+.buy2ticket{
+    display: flex;
+    border: solid 1px orange;
+    align-items: center;
+    height: 2%;
+    width: 16.7%;
+    margin-left: 42%; 
+    margin-bottom: 80px;
+}
+.buy2ticket:hover{
+    cursor: pointer;
+}

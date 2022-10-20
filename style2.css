@@ -1,0 +1,126 @@
+header{
+    display: flex;
+    /* border: solid 1px orange; */
+    justify-content: space-between;
+    align-items: center;
+    height: 115px;
+}
+body{
+    background-color: black;
+    margin: -1px;
+}
+.all{
+    border: solid 1px violet;
+    /* background-image: url(images/Séquence\ 01.webm);
+    background-repeat: repeat;
+    background-size: cover; */
+    height: 680px;
+    position: relative;
+}
+video{
+    position: absolute;
+    width: 100%;
+    height: 680px;
+    top: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+.button{
+    padding-right: 69px;
+    margin-right: 68px;
+    color: white;
+    border-right: 3px solid white;
+    
+}
+a{ 
+    text-decoration: none; 
+    font-family: 'monopolixbold';
+    font-size: 16px;
+    letter-spacing: 4px;
+}
+.button:hover{
+    color: #F1A208;
+    transition: 0.3s;
+    font-size: 18px;
+}
+.Fr:hover{
+    color: #F1A208;
+    transition: 0.3s;
+    font-size: 18px;
+}
+.En:hover{
+    color: #F1A208;
+    transition: 0.3s;
+    font-size: 18px;
+}
+.En{
+    padding-right: 29px;
+    margin-right: 28px;
+    color: white;
+}
+.Fr{
+    padding-right: 10px;
+    margin-right: 6px;
+    color: white;
+    border-right: 1px solid white;
+    
+}
+.logo{
+    width: 11.25%;
+    height: 70%;
+    margin-left: 4%;
+    margin-top: 4%;
+}
+nav{
+    margin-top: 50px;
+}
+.flux{
+    border: solid 1px red;
+    justify-content: flex-end;
+    height: 3300px;
+}
+.ticket{
+    display: flex;
+    /* border: solid 1px orange; */
+    justify-content: flex-end;
+    height: 50px;
+    top: 420px;
+    right: 0;
+    position: fixed;
+}
+.buyticket{
+    display: flex;
+    border: solid 1px orange;
+    align-items: center;
+    height: 2%;
+    width: 16.7%;
+    margin-left: 10%; 
+}
+.buyticket:hover{
+    cursor: pointer;
+}
+.middle{
+    display: flex;
+    border: solid 1px white;
+    height: 200px;
+    width: 80%;
+    margin-left: 10%; 
+    margin-top: 215px;
+    align-items: center;
+}
+.head{
+    color: white;
+    font-family: 'monopolixbold';
+    font-size: 96px;
+    letter-spacing: 4px;
+}
+
+.swipe{
+    display: flex;
+    border: solid 1px orange;
+    justify-content: flex-end;
+    height: 20px;
+    width: 2%;
+    margin-left: 94%;
+    margin-top: 2%;
+}

@@ -1,0 +1,54 @@
+header{
+    display: flex;
+    height: 77px;
+}
+body{
+    margin: -1.30%;
+    height: 810px;
+    background-color: black;
+}
+.accueil{
+    margin: 3.87% 3.77% -1.30% 362px;
+    color: white;
+}
+.collection{
+    margin: 3.87% 3.77% -1.30% 3.77%;
+    color: white;
+}
+.amav{
+    margin: 3.87% 3.77% -1.30% 3.77%;
+    color: white;
+}
+.apropos{
+    margin: 3.87% 1.95% -1.30% 3.77%;
+    color: white;
+}
+.fr{
+    margin: 3.87% 0.46% -1.30% 3.77%;
+    color: white;
+}
+.en{
+    margin: 3.87% 1.95% -1.30% 0.46%;
+    color: white;
+}
+.vl {
+    border-left: 3px solid white;
+    height: 25.98%;
+    margin: 3.87% -0.07% -1px -0.07%
+}
+.v2{
+    border-left: 3px solid white;
+    height: 25.98%;
+    margin: 3.87% -0.07% -1px 1.82%
+}
+.v3 {
+    border-left: 2px solid white;
+    height: 19.48%;
+    margin: 4.2% -0.07% -1px -0.07%
+}
+.logo{
+    width: 11.25%;
+    height: 100%;
+    margin-left: 4%;
+    margin-top: 2%;
+}
