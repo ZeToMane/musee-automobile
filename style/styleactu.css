@@ -37,15 +37,15 @@
 }
 
 .box-actualite-1 {
-    background-image: url("images/carroussel/carroussel_img1.png");
+    background-image: url("/images/carroussel/carroussel_img1.png");
 }
 
 .box-actualite-2 {
-    background-image: url("images/carroussel/Carroussel_img2.png");
+    background-image: url("/images/carroussel/Carroussel_img2.png");
 }
 
 .box-actualite-3 {
-    background-image: url("images/carroussel/carroussel_img3.png");
+    background-image: url("/images/carroussel/carroussel_img3.png");
 }
 @media (max-width: 1024px){
     .actualites h1 {

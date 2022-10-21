@@ -182,23 +182,23 @@ h1.decouvrir {
 }
 .back-ancetre{
     /* border: solid 2px violet; */
-    background-image: url(images/philip-back.png);
+    background-image: url(/images/philip-back.png);
     background-size: 100%;
     margin-bottom: 150px;
 }
 .back-populaire{
     /* border: solid 2px violet; */
-    background-image: url(images/fredrik-back.png);
+    background-image: url(/images/fredrik-back.png);
     margin-bottom: 150px;
 }
 .back-exeception{
     /* border: solid 2px violet; */
-    background-image: url(images/bonhams-back.png);
+    background-image: url(/images/bonhams-back.png);
     margin-bottom: 100px;
 }
 .back-voyage{
     /* border: solid 2px violet; */
-    background-image: url(images/arnaud-back.png);
+    background-image: url(/images/arnaud-back.png);
     background-size: 100%;
     margin-bottom: 150px;
     margin-top: 200px;
