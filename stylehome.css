@@ -48,7 +48,7 @@
 }
 
 .Un-siecle-d-automobile p {
-    padding-left: 6%
+    padding-left: 6%;
 }
 
 .facon {
@@ -79,4 +79,78 @@ button  {
     background: white;
     margin-bottom: 40px;
     margin-top: 0px;
+}
+@media (max-width: 1024px){
+    .title{
+        font-size: 48px;
+    }
+    .text h2{
+        font-size: 32px;
+        
+    }
+    .text{
+        margin-top: 166px;
+    }
+    .text p{
+        font-size: 15px;
+        margin-bottom: 20px;
+        margin-top: 15px;
+        border: solid 1px red;
+        width: 200%;
+    }
+    .Un-siecle-d-automobile {
+        padding-left: 35%;
+    }
+    .Un-siecle-d-automobile p {
+        padding-left: 0%;
+        width: 80%;
+    }
+    .locaux p{
+        margin-bottom: 50px;
+        margin-top: 50px;
+        padding-left: 21%;
+    }
+    .locaux h2{
+        margin-top: 50px;
+        margin-left: 15%;
+        width: 200%;
+    }
+    .facon p{
+        margin-bottom: 70px;
+        margin-top: 70px;
+    }
+    .locaux button {
+        margin-left: 60%;
+        width: 100%;
+    }
+    .Un-siecle-d-automobile {
+        padding-top: 17%;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .Un-siecle-d-automobile h2{
+        margin-top: 50px;
+        margin-left: 14%;
+        width: 80%;
+    }
+    .Un-siecle-d-automobile p {
+        width: 100%;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    .Un-siecle-d-automobile button {
+        margin-left: 20%;
+        width: 60%;
+    }
+    .facon {
+        padding-left: 0%;
+    }
+    .facon h2{
+        margin-left: 50%;
+        width: 100%;
+    }
+    .facon button {
+        margin-left: 50%;
+        width: 100%;
+    }
 }

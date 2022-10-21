@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="style(navbutton).css">
     <link rel="stylesheet" href="stylemap.css">
     <link rel="stylesheet" href="style-footer.css">
+    <link rel="stylesheet" href="splide.min.css">
+    <link rel="stylesheet" href="styleactu.css">
     
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -105,13 +107,25 @@
             <img class="logo" src="images/Logo_blanc.png" alt="">
             <nav>
                 <a class="button" href="">ACCUEIL</a>
-                <a class="button" href="">COLLECTION</a>
+                <a class="button" href="index(page2).html">COLLECTION</a>
                 <a class="button" href="">AMAV</a>
                 <a class="button" href="">A PROPOS</a>
                 <a class="Fr" href="">Fr</a>
                 <a class="En"href="">En</a>
             </nav>
+            <span class="menu" onclick="openMenu()">&#9776;</span>
         </header>
+
+        <div id="myMenu" class="sidemenu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+            <a class="button" href="index(homepage).html">ACCUEIL <br><br></a>
+            <a class="button" href="index(page2).html">COLLECTION <br><br></a>
+            <a class="button" href="">AMAV <br><br></a>
+            <a class="button" href="">A PROPOS <br><br></a>
+            <a class="Fr" href="">Fr</a>
+            <a class="En"href="">En</a>
+        </div>
+
         <video autoplay loop muted>
             <source type="video/mp4" src="images/hero.mp4"></source>
         </video>
@@ -141,7 +155,7 @@
                 <section class="Un-siecle-d-automobile">
                     <h2>Découvrez plus d'un siècle d'Automobile !</h2>
                     <p>Issu de la collection des frères GUIGNARD, le Musée de l’Automobile de Valençay présente l’évolution de l’industrie automobile française sur plus d’un siècle. Garagiste de père en fils depuis 1906, les membres de la famille GUIGNARD ont conservé au fil des années, les voitures qu’ils possédaient et ont même étoffé leur collection. </p>
-                    <button onclick="window.location.href = 'https://fr.w3docs.com/';">❙    DECOUVRIR NOTRE COLLECTION  ❙ </button>
+                    <button class="collect" onclick="window.location.href = 'index(page2).html'">❙    DECOUVRIR NOTRE COLLECTION  ❙ </button>
                 </section>
         
                 <section class="facon">
@@ -149,6 +163,47 @@
                     <p>Visiter notre musée à votre manière grâce à nos différentes offres. Nous proposons des visites en Francais et en Anglais. Nous nous adaptons à vos besoins.</p>
                     <button onclick="window.location.href = 'https://fr.w3docs.com/';">❙    DECOUVRIR NOS OFFRES   ❙ </button>
                 </section>
+            </section>
+
+            <section class="actualites">
+                <h1>Actualités</h1>
+                <hr class="lignetext"> 
+    
+    
+                <section id="image-carousel" class="splide image-carousel" aria-label="Beautiful Images">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="box-actualites box-actualite-1">
+    
+                                    <p>Rassemblement nationale</p>
+                                    <p>22 octobre 2022</p>
+    
+                                    <!--<img src="image/carroussel/carroussel_img1.png" alt="">-->
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box-actualites box-actualite-2">
+    
+                                    <p>Rassemblement Volswagen</p>
+                                    <p>29 oct</p>
+    
+                                    <!-- <img src="image/carroussel/Carroussel_img2.png" alt="">-->
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box-actualites box-actualite-3">
+    
+                                    <p>Rassemblement des années 1950</p>
+                                    <p>30 novembre 2022</p>
+    
+                                    <!--<img src="image/carroussel/carroussel_img3.png" alt="">-->
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+    
             </section>
             
             <div class="trouver">
@@ -205,21 +260,38 @@
         </div>
     </div>
     <!-- Scripts pour le fonctionnement de la SideBar -->
+    <script src="js/splide.min.js"></script>
     <script>
         function openNav() {
+            if (x.matches) { // If media query matches
+                document.getElementById("mySidenav").style.width = "100%";
+            } else{
             document.getElementById("mySidenav").style.width = "50%";
+            }
         }
         
         function openNav2() {
+            if (x.matches) { // If media query matches
+                document.getElementById("mySidenav2").style.width = "100%";
+            } else{
             document.getElementById("mySidenav2").style.width = "50%";
+            }
         }
 
         function openNav3() {
+            if (x.matches) { // If media query matches
+                document.getElementById("mySidenav3").style.width = "100%";
+            } else{
             document.getElementById("mySidenav3").style.width = "50%";
+            }
         }
 
         function openTarifGroup() {
+            if (x.matches) { // If media query matches
+                document.getElementById("tarif-group").style.width = "100%";
+            } else{
             document.getElementById("tarif-group").style.width = "50%";
+            }
             document.getElementById("groupcolor").style.color = "#F1A208";
             document.getElementById("indivcolor").style.color = "#000000";
         }
@@ -229,6 +301,8 @@
             document.getElementById("mySidenav2").style.width = "0";
             document.getElementById("mySidenav3").style.width = "0";
             document.getElementById("tarif-group").style.width = "0%";
+            document.getElementById("groupcolor").style.color = "#000000";
+            document.getElementById("indivcolor").style.color = "#F1A208";
         }
 
         function closeTarifGroup() {
@@ -240,13 +314,31 @@
         function retour() {
             document.getElementById("mySidenav2").style.width = "0";
             document.getElementById("tarif-group").style.width = "0%";
+            document.getElementById("groupcolor").style.color = "#000000";
+            document.getElementById("indivcolor").style.color = "#F1A208";
         }
 
         function retour2() {
             document.getElementById("mySidenav3").style.width = "0";
         }
 
+        function openMenu() { 
+            document.getElementById("myMenu").style.width = "70%";
+            document.getElementById("myMenu").style.border= "solid 5px #F1A208";
+        }
+
+        function closeMenu() { 
+            document.getElementById("myMenu").style.width = "0%";
+            document.getElementById("myMenu").style.border= "none";
+        }
+
         $( "#datepicker" ).datepicker();
+
+        new Splide('#image-carousel',   { type : 'loop', padding: '5rem', }     ).mount();
+
+        var x = window.matchMedia("(max-width: 1024px)")
+        myFunction(x) // Call listener function at run time
+        x.addListener(myFunction) // Attach listener function on state changes
 
     </script>
 </body>

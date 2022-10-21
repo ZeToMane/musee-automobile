@@ -21,7 +21,7 @@
     width: 65;
     text-align: center;
     margin-bottom: 12%;
-    padding-top: 10%;
+    padding-top: 5%;
 
 
 }
@@ -47,4 +47,22 @@
 }
 .trouver h1{
     font-size: 58px ;
+}
+@media (max-width: 1024px){
+    .trouver h1{
+        font-size: 48px ;
+    }
+    .trouver p{
+        font-size: 15px;
+    }
+    .trouver{
+        display: block;
+    }
+    .trouver img{
+        margin-right: 0%;
+        padding-left: 0%;
+        margin-top: 0%;
+        width: 100%;
+    
+    }
 }

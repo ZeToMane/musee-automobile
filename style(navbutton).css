@@ -2,7 +2,7 @@
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 11;
     top: 0;
     right: 0;
     background-color: #D9D9D9;
@@ -15,7 +15,7 @@
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 11;
     top: 0;
     right: 0;
     background-color: #D9D9D9;
@@ -23,10 +23,10 @@
 }
 
 .group {
-    height: 43%;
+    height: 38%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 11;
     top: 345px;
     right: 0;
     background-color: #D9D9D9;
@@ -39,7 +39,7 @@
     right: 25px;
     font-size: 76px;
     margin-left: 50px;
-    color: black;
+    color: white;
 }
 .closebtn:hover{
     color: #F1A208;
@@ -50,7 +50,7 @@
     cursor: pointer;
 }
 .suivant{
-    margin-top: 6%;
+    margin-top: 1%;
     margin-left: 36.5%;
     cursor: pointer;
     /* transition: 0.1s; */
@@ -188,4 +188,45 @@ input[type="tel"] {
 }
 .format{
     font-family: 'monopolix_medium-webfont';
+}
+
+@media (max-width: 1024px){
+    .texte{
+        font-size: 36px;
+        margin-top: 10%;
+    }
+    .progression {
+        margin-left: 17.5%;
+    }
+    .calendrier { 
+        margin-left: 11.5%; 
+    }
+    .suivant {
+        margin-left: 25%;
+        width: 50%;
+    }
+    .tarif{
+        font-size: 20px;
+        margin-left: 6%;
+    }
+    .star{
+        font-size: 20px;
+    }
+    .indiv-group{
+        margin-left: 5%;
+        font-size: 32px;
+    }
+    .group {
+        height: 35%;
+        top: 304px
+    }
+    .form{
+        margin-top: 5%;
+        margin-left: 12.5%;
+    }
+    .retour{
+        margin-top: 10%;
+        margin-left: 2%;
+        width: 40%;
+    }
 }

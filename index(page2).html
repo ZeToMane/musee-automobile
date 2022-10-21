@@ -87,7 +87,16 @@
         <h2 class="texte" >Vos Informations</h2>
         <hr class="lignenav"> 
         <img class="progression" src="assets/progression3.png" alt="">
-        <img class="form" src="assets/formulaire.png" alt="">
+        <form class="form">
+            <input type="text" id="nom" placeholder="Nom">
+            <br>
+            <input type="text" id="prenom" placeholder="Prénom">
+            <br>
+            <input type="text" id="mail" placeholder="E-mail">
+            <br>
+            <input type="text" id="num" placeholder="Numéro Téléphone" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+            <p class="format">Format: 05 12 34 56 78</p>
+        </form>
         <img class="suivant" src="assets/payer.png" alt="">
     </div>
     <!-- Le Coeur du Site -->
@@ -96,14 +105,17 @@
         <header>
             <img class="logo" src="images/Logo_blanc.png" alt="">
             <nav>
-                <a class="button" href="">ACCUEIL</a>
-                <a class="button" href="">COLLECTION</a>
+                <a class="button" href="index(homepage).html">ACCUEIL</a>
+                <a class="button" href="index(page2).html">COLLECTION</a>
                 <a class="button" href="">AMAV</a>
                 <a class="button" href="">A PROPOS</a>
                 <a class="Fr" href="">Fr</a>
                 <a class="En"href="">En</a>
             </nav>
         </header>
+        <video autoplay loop muted>
+            <source type="video/mp4" src="images/hero.mp4"></source>
+        </video>
         <!-- Contenu + Boutons -->
         <div class="flux" >
             <section class="middle" >
