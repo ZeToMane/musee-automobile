@@ -108,8 +108,8 @@ div.texte_aa {
 }
 
 .texte-commun p {
-    margin-bottom: 40px;
-    margin-top: 40px;
+    margin-bottom: 0px;
+    margin-top: 17px;
     letter-spacing: 4px;
 }
 
