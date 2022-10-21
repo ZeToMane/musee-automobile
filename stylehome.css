@@ -112,7 +112,7 @@ button  {
     }
     .locaux h2{
         margin-top: 50px;
-        margin-left: 15%;
+        margin-left: 21%;
         width: 200%;
     }
     .facon p{
@@ -145,8 +145,11 @@ button  {
     .facon {
         padding-left: 0%;
     }
+    .facon p{
+        padding-left: 14%;
+    }
     .facon h2{
-        margin-left: 50%;
+        margin-left: 55%;
         width: 100%;
     }
     .facon button {
