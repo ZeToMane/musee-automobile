@@ -92,7 +92,7 @@
 }
 .indiv-group{
     display: flex;
-    border: solid 1px orange;
+    /* border: solid 1px orange; */
     margin-top: 5%;
     margin-left: 11%;
     font-size: 48px;
@@ -115,7 +115,7 @@
     transform: scale(1.2);
 }
 .tarif{
-    border: solid 1px red;
+    /* border: solid 1px red; */
     margin-left: 11%;
     font-size: 48px;
     font-family: 'monopolixmedium';

@@ -103,7 +103,7 @@ div.texte_aa {
     font-family: "Nunito";
     font-size: 18px;
     margin-left: 5%;
-    border: solid 2px white;
+    /* border: solid 2px white; */
     width: 70%;
 }
 
@@ -123,7 +123,7 @@ div.texte_bb {
     font-size: 18px;
     margin-top: 50px;
     margin-left: 50px;
-    border: solid 2px white;
+    /* border: solid 2px white; */
     width: 70%;
 }
 
@@ -132,7 +132,7 @@ div.texte_cc {
     font-size: 18px;
     margin-top: 50px;
     margin-left: 50px;
-    border: solid 2px white;
+    /* border: solid 2px white; */
     width: 70%;
 }
 
@@ -141,7 +141,7 @@ div.texte_ff {
     font-size: 18px;
     margin-top: 30px;
     margin-left: 30px;
-    border: solid 2px white;
+    /* border: solid 2px white; */
     width: 70%;
 }
 
@@ -150,7 +150,7 @@ div.texte_uu {
     margin-top: 50px;
     margin-left: 2%;
     font-size: 18px;
-    border: solid 2px white;
+    /* border: solid 2px white; */
 }
 
 img.bonhams {
@@ -181,23 +181,23 @@ h1.decouvrir {
     color: white;
 }
 .back-ancetre{
-    border: solid 2px violet;
+    /* border: solid 2px violet; */
     background-image: url(images/philip-back.png);
     background-size: 100%;
     margin-bottom: 150px;
 }
 .back-populaire{
-    border: solid 2px violet;
+    /* border: solid 2px violet; */
     background-image: url(images/fredrik-back.png);
     margin-bottom: 150px;
 }
 .back-exeception{
-    border: solid 2px violet;
+    /* border: solid 2px violet; */
     background-image: url(images/bonhams-back.png);
     margin-bottom: 100px;
 }
 .back-voyage{
-    border: solid 2px violet;
+    /* border: solid 2px violet; */
     background-image: url(images/arnaud-back.png);
     background-size: 100%;
     margin-bottom: 150px;
@@ -205,7 +205,7 @@ h1.decouvrir {
 }
 .buy2ticket{
     display: flex;
-    border: solid 1px orange;
+    /* border: solid 1px orange; */
     align-items: center;
     height: 2%;
     width: 16.7%;
