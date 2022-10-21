@@ -159,7 +159,7 @@ nav{
         font-size: 36px;
     }
     header a{
-        opacity: 0%;
+        display: none;
     }
     .menu{
         opacity: 100%;
