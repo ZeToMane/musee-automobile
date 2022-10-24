@@ -41,7 +41,7 @@
             <p onclick="closeTarifGroup()" id="indivcolor" class="indiv">Individuel</p>
             <p onclick="openTarifGroup()" id="groupcolor" class="gr">Groupes</p>
         </div>
-        <div class="tarif">
+        <div id="tarif-indiv" class="tarif">
             <section class="prix">
                 <p class="plein" >Plein tarif</p>
                 <p>7€</p>
@@ -62,7 +62,7 @@
             <hr class="lignetarif">
             <p class="star">*étudiants, demandeurs d'emploi, personnes handicapées, et enseignants</p>
         </div>
-        <img onclick="openNav3()" class="suivant" src="assets/suivant.png" alt="">
+        <img onclick="openNav3()" id="suivant-display" class="suivant" src="assets/suivant.png" alt="">
     </div>
 
     <div id="tarif-group" class="group">
@@ -80,6 +80,7 @@
             </section>
             <hr class="lignetarif">
         </div>
+        <img onclick="openNav3()" class="suivant2" src="assets/suivant.png" alt="">
     </div>
 
     <div id="mySidenav3" class="sidenav2">
@@ -294,6 +295,8 @@
             }
             document.getElementById("groupcolor").style.color = "#F1A208";
             document.getElementById("indivcolor").style.color = "#000000";
+            document.getElementById("tarif-indiv").style.display = "none";
+            document.getElementById("suivant-display").style.display = "none";
         }
 
         function closeNav() {
@@ -309,6 +312,8 @@
             document.getElementById("tarif-group").style.width = "0%";
             document.getElementById("groupcolor").style.color = "#000000";
             document.getElementById("indivcolor").style.color = "#F1A208";
+            document.getElementById("tarif-indiv").style.display = "block";
+            document.getElementById("suivant-display").style.display = "block";
         }
 
         function retour() {

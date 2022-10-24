@@ -23,7 +23,7 @@
 }
 
 .group {
-    height: 38%;
+    height: 60%;
     width: 0;
     position: fixed;
     z-index: 11;
@@ -51,6 +51,19 @@
 }
 .suivant{
     margin-top: 1%;
+    margin-left: 36.5%;
+    cursor: pointer;
+    /* transition: 0.1s; */
+}
+.suivant{
+    margin-top: 1%;
+    margin-left: 36.5%;
+    cursor: pointer;
+    /* transition: 0.1s; */
+}
+
+.suivant2{
+    margin-top: 14.6%;
     margin-left: 36.5%;
     cursor: pointer;
     /* transition: 0.1s; */
@@ -154,7 +167,7 @@
 }
 .form{
     margin-top: 5%;
-    margin-left: 33%;
+    margin-left: 30%;
     /* transition: 0.1s; */
 }
 .nom{
@@ -196,12 +209,16 @@ input[type="tel"] {
         margin-top: 10%;
     }
     .progression {
-        margin-left: 17.5%;
+        margin-left: 18.5%;
     }
     .calendrier { 
-        margin-left: 11.5%; 
+        margin-left: 12.5%; 
     }
     .suivant {
+        margin-left: 25%;
+        width: 50%;
+    }
+    .suivant2 {
         margin-left: 25%;
         width: 50%;
     }
@@ -217,12 +234,12 @@ input[type="tel"] {
         font-size: 32px;
     }
     .group {
-        height: 35%;
-        top: 304px
+        /* height: 35%;
+        top: 304px */
     }
     .form{
         margin-top: 5%;
-        margin-left: 6.5%;
+        margin-left: 7.5%;
     }
     .retour{
         margin-top: 10%;

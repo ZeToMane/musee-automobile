@@ -120,8 +120,8 @@ button  {
         margin-top: 70px;
     }
     .locaux button {
-        margin-left: 60%;
-        width: 100%;
+        margin-left: 55%;
+        width: 50vw;
     }
     .Un-siecle-d-automobile {
         padding-top: 17%;
@@ -134,9 +134,10 @@ button  {
         width: 80%;
     }
     .Un-siecle-d-automobile p {
-        width: 100%;
+        width: 80%;
         margin-bottom: 50px;
         margin-top: 50px;
+        margin-left: 10%;
     }
     .Un-siecle-d-automobile button {
         margin-left: 20%;
